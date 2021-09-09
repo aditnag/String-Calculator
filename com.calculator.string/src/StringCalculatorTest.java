@@ -12,4 +12,10 @@ public class StringCalculatorTest
     public void sumSingleDigitToItself() {
         Assertions.assertEquals(StringCalculator.Add("1"),1);
     }
+
+    @Test
+    public void sumTwoNumbersCommaSeparated() {
+        Assertions.assertEquals(StringCalculator.Add("1,2"),3);
+
+    }
 }
