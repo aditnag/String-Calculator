@@ -10,9 +10,13 @@ public class StringCalculator
             return stringToInt(input);
         }
         else {
-            return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+            return getSum(numbers[0],numbers[1]);
         }
     }
+    private static int getSum(String num1, String num2){
+        return Integer.parseInt(num1) + Integer.parseInt(num2);
+    }
+
     private static boolean isEmpty(String input){
         return input.isEmpty();
     }
