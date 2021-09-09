@@ -16,6 +16,7 @@ public class StringCalculatorTest
     @Test
     public void sumTwoNumbersCommaDelimited() {
         Assertions.assertEquals(StringCalculator.Add("1,2"),3);
+        Assertions.assertEquals(StringCalculator.Add("1,5"),6);
 
     }
 }
