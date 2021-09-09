@@ -19,4 +19,9 @@ public class StringCalculatorTest
         Assertions.assertEquals(StringCalculator.Add("1,5"),6);
 
     }
+
+    @Test
+    public void twoNumNewLineDelimitedReturnSum() {
+        Assertions.assertEquals(StringCalculator.Add("1\n2"), 3);
+    }
 }
