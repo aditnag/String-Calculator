@@ -29,4 +29,9 @@ public class StringCalculatorTest {
         Assertions.assertEquals(StringCalculator.Add("1\n2"), 3);
         Assertions.assertEquals(StringCalculator.Add("1\n9"), 10);
     }
+
+    @Test
+    public void supportDifferentDelimiters() {
+        Assertions.assertEquals(StringCalculator.Add("“//;\\n1;2"), 3);
+    }
 }
