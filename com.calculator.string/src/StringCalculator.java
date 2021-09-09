@@ -2,9 +2,16 @@
 public class StringCalculator
 {
     public static int Add(String input) {
-        if (input.isEmpty())
+        if (!isEmpty(input)) {
+            return stringToInt(input);
+        } else {
             return 0;
-        else
-            return Integer.parseInt(input);
+        }
+    }
+    private static boolean isEmpty(String input){
+        return input.isEmpty();
+    }
+    private static int stringToInt(String input){
+        return Integer.parseInt(input);
     }
 }
