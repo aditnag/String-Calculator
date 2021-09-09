@@ -2,10 +2,15 @@
 public class StringCalculator
 {
     public static int Add(String input) {
-        if (!isEmpty(input)) {
-            return stringToInt(input);
-        } else {
+        String[] numbers = input.split(",");
+        if (isEmpty(input)) {
             return 0;
+        }
+        if (input.length() == 1){
+            return stringToInt(input);
+        }
+        else {
+            return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
         }
     }
     private static boolean isEmpty(String input){
