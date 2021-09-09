@@ -14,7 +14,7 @@ public class StringCalculatorTest
     }
 
     @Test
-    public void sumTwoNumbersCommaSeparated() {
+    public void sumTwoNumbersCommaDelimited() {
         Assertions.assertEquals(StringCalculator.Add("1,2"),3);
 
     }
