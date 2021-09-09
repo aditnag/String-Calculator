@@ -7,4 +7,9 @@ public class StringCalculatorTest
     {
         Assertions.assertEquals(StringCalculator.Add(""),0);
     }
+
+    @Test
+    public void sumSingleDigitToItself() {
+        Assertions.assertEquals(StringCalculator.Add("1"),1);
+    }
 }
